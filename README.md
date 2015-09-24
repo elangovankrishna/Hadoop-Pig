@@ -1,6 +1,19 @@
 # Hadoop-Pig
 Pig Latin Scripts
 
+Problem Statement
+A. Finding the list of people with particular grade who have taken loan.
+B. Finding the list of people with having interest more than certain value like 1000.
+C. Finding the list of people with having loan amount more than certain value.
+D. Get maximum number of loan given to which grade users (A-G).
+E. Highest loan amount given in that year with that Employee id and Employees annual income.
+F. Get the total number of loans with loan id and load amount which are all having loan status as Late?
+G. Average loan interest rate with 60 month term and 36 month term.
+Dataset
+https://edureka.wistia.com/medias/cpj3ljetym/download?media_file_id=64495520
+Dataset Description
+https://edureka.wistia.com/medias/410pi4dlfe/download?media_file_id=64495579
+
 -- Loan Project Scripts 
 
 loandata = Load '/user/edureka/learning/loan_project/LoanData_Fin.csv' using PigStorage('\t') as (id:int, member_id:int, loan_amnt:int, funded_amnt:int, funded_amnt_inv:int, term:chararray, int_rate:long, installment:long, grade:chararray, sub_grade:chararray, emp_title:chararray, emp_length:chararray, home_ownership:chararray, annual_inc:int, is_inc_v:chararray, issue_d:chararray, loan_status:chararray, pymnt_plan:chararray, url:chararray, desc:chararray, purpose:chararray, title:chararray, zip_code:chararray, addr_state:chararray, dti:int, delinq_2yrs:int, earliest_cr_line:int, inq_last_6mths:int, mths_since_last_delinq:int, mths_since_last_record:int, open_acc:chararray, pub_rec:int, revol_bal:int, revol_util:long, total_acc:int, initial_list_status:chararray, out_prncp:double, out_prncp_inv:long, total_pymnt:long, total_pymnt_inv:long, total_rec_prncp:long, total_rec_int:long, total_rec_late_fee:long, recoveries:long, collection_recovery_fee:long, last_pymnt_d:Chararray, last_pymnt_amnt:Chararray, next_pymnt_d:Chararray, ast_credit_pull_d:Chararray, collections_12_mths_ex_med:Chararray, mths_since_last_major_derog:Chararray, policy_code:Chararray);
